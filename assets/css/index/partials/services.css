@@ -1,0 +1,33 @@
+.services {
+  align-items: center;
+  background: var(--cor-degrade-servicos);
+  background: var(--cor-degrade-servicos-webkit);
+}
+
+.title-services {
+  text-align: center;
+  color: var(--cor-branco);
+}
+
+.btn-service {
+  background-color: var(--cor-azul-escuro-1);
+  border: transparent;
+}
+
+.btn-service:hover {
+  background-color: var(--cor-azul-escuro-2);
+  border: transparent;
+}
+
+.card-text {
+  min-height: 200px;
+}
+
+.card-title::after {
+  content: "";
+  width: 120px;
+  height: 4px;
+  display: flex;
+  margin: 20px auto;
+  background-color: var(--cor-azul-escuro-2);
+}

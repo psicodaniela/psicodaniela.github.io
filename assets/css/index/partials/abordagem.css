@@ -1,0 +1,26 @@
+.abordagem {
+  background: linear-gradient(90deg, #ffffff, #ffffff);
+  background: -webkit-linear-gradient(90deg, #ffffff, #ffffff);
+  align-items: center;
+  min-height: 350px;
+}
+
+.title-abordagem {
+  font-size: 40px;
+  color: var(--cor-azul-escuro-1);
+}
+
+.abordagem p {
+  font-family: var(--regular);
+  font-size: 16px;
+  color: var(--cor-azul-escuro-1);
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.rodape-info {
+  background: linear-gradient(90deg, #085571, #6a99a9);
+  background: -webkit-linear-gradient(90deg, #085571, #6a99a9);
+  align-items: center;
+  min-height: 250px;
+}

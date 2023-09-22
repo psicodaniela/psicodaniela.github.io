@@ -1,0 +1,174 @@
+/* index <header> */
+
+header {
+  background: var(--cor-degrade-branco);
+  background: var(--cor-degrade-branco-webkit);
+}
+
+/* Título */
+
+header .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 50px 0;
+  width: 50%;
+}
+
+header .titulo h1 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--cor-azul-escuro-1);
+  line-height: 1.4;
+  width: 100%;
+  max-width: 600px;
+}
+
+header .titulo h1 span {
+  color: var(--cor-azul-claro-2);
+}
+
+header .titulo p {
+  font-family: var(--regular);
+  font-size: 16px;
+  color: var(--cor-azul-escuro-1);
+  line-height: 1.5;
+  width: 100%;
+  max-width: 600px;
+  margin: 15px 0 20px 0;
+  text-align: justify;
+}
+
+header .titulo button {
+  display: flex;
+  align-items: center;
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-azul-escuro-1);
+  border-radius: 10px;
+  padding: 0 0 0 20px;
+  transition: all 0.3s;
+}
+
+header .titulo button:hover {
+  background-color: var(--cor-azul-escuro-2);
+}
+
+header .titulo button:hover span img {
+  transform: scale(1.2);
+}
+
+header .titulo button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: var(--cor-degrade-claro);
+  background: var(--cor-degrade-claro-webkit);
+  margin: 0 0 0 20px;
+  pointer-events: none;
+}
+
+header .titulo button span img {
+  width: 100%;
+  max-width: 25px;
+  transition: all 0.3s;
+}
+
+/* Imagem */
+
+header .imagem {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 50%;
+  background-image: url("../../../../files/images/divisor.png");
+  background-position: left center;
+  background-size: cover;
+  padding: 100px 50px 0 0;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+header .imagem img.daniela {
+  width: 480px;
+  z-index: 2;
+  animation: ImgDani 20s linear infinite;
+}
+
+@keyframes ImgDani {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+header .imagem svg {
+  position: absolute;
+  bottom: 80px;
+  right: -80px;
+  width: 700px;
+  fill: var(--cor-azul-escuro-1);
+  z-index: 1;
+  animation: Svg 30s linear infinite;
+}
+
+@keyframes Svg {
+  0% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--cor-azul-escuro-1);
+  }
+  50% {
+    transform: scale(1.1) rotate(-20deg);
+    fill: var(--cor-azul-escuro-2);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--cor-azul-escuro-1);
+  }
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+  }
+
+  /* Título */
+
+  header .titulo {
+    padding: 100px 30px 40px 30px;
+    width: 100%;
+  }
+
+  /* Imagem */
+
+  header .imagem {
+    width: 100%;
+    background-image: url("../../../../files/images/divisor-mobile.png");
+    background-position: top center;
+    padding: 40px 30px 0 30px;
+    min-height: auto;
+  }
+
+  header .imagem img.muzy {
+    max-width: 330px;
+  }
+
+  header .imagem svg {
+    bottom: -40px;
+    right: -20px;
+    width: 400px;
+  }
+}

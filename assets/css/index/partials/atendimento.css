@@ -1,0 +1,15 @@
+.atendimento {
+  align-items: center;
+  min-height: 480px;
+  background: var(--cor-degrade-servicos);
+  background: var(--cor-degrade-servicos-webkit);
+}
+
+.box-card {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.item-card {
+  border: 1px solid #fff;
+}

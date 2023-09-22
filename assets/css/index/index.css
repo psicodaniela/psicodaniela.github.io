@@ -1,0 +1,12 @@
+/* index */
+
+@import "../global/global.css";
+
+/* Partials */
+
+@import "./partials/nav.css";
+@import "./partials/header.css";
+@import "./partials/services.css";
+@import "./partials/abordagem.css";
+@import "./partials/atendimento.css";
+@import "./partials/faq.css";
