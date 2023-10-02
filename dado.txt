@@ -1,0 +1,12 @@
+Acessos site
+
+email: sitepsicodaniela@gmail.com
+
+senha: psico2023*
+
+token: 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
+
+style="width: 100%; height: 500px; position: absolute; top: -550px"
+
+
+git config user.email sitepsicodaniela@gmail.com
