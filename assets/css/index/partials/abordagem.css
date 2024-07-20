@@ -5,6 +5,11 @@
   min-height: 350px;
 }
 
+.abordagem > section > div > div > img {
+  max-width: 100%;
+  object-fit: fill;
+}
+
 .title-abordagem {
   font-size: 40px;
   color: var(--cor-azul-escuro-1);
