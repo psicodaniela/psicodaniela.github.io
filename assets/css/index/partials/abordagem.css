@@ -6,8 +6,11 @@
 }
 
 .abordagem > section > div > div > img {
-  max-width: 100%;
+  max-width: 400px;
+  width: 100%;
+  height: 480px;
   object-fit: fill;
+  border-radius: 10px;
 }
 
 .title-abordagem {
